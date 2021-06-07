@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+    
+
+    
+    <title>python 기초문법 | OWL Sound</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="keywords" content="python" />
+    
+    <meta name="description" content="1. Hello World  출력1print(&quot;Hello World&quot;); Hello, world!  2. 주석처리 한줄주석처리 -&gt; #  여러줄 주석처리 -&gt; 동일한 따옴표(“”” or ‘’’) 3개와 3개 사이에는 어떠한내용이 들어가도 주석처리가된다.  3. 사칙연산123456789a &#x3D; 5b &#x3D; 7print(&amp;#x27;a +">
+<meta property="og:type" content="article">
+<meta property="og:title" content="python 기초문법">
+<meta property="og:url" content="https://cho111.github.io/2021/04/06/python/index.html">
+<meta property="og:site_name" content="OWL Sound">
+<meta property="og:description" content="1. Hello World  출력1print(&quot;Hello World&quot;); Hello, world!  2. 주석처리 한줄주석처리 -&gt; #  여러줄 주석처리 -&gt; 동일한 따옴표(“”” or ‘’’) 3개와 3개 사이에는 어떠한내용이 들어가도 주석처리가된다.  3. 사칙연산123456789a &#x3D; 5b &#x3D; 7print(&amp;#x27;a +">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-04-06T02:47:52.000Z">
+<meta property="article:modified_time" content="2021-06-07T11:01:52.054Z">
+<meta property="article:author" content="CHO">
+<meta property="article:tag" content="python">
+<meta name="twitter:card" content="summary">
+    
+
+    
+        <link rel="alternate" href="/" title="OWL Sound" type="application/atom+xml" />
+    
+
+    
+
+    
+<link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+
+    
+<link rel="stylesheet" href="/libs/titillium-web/styles.css">
+
+    
+<link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    
+<script src="/libs/jquery/3.5.0/jquery.min.js"></script>
+
+    
+    
+        
+<link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+
+    
+    
+        
+<link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+
+    
+    
+    
+    
+
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+    <div id="header-outer" class="outer">
+        <div class="container">
+            <div class="container-inner">
+                <div id="header-title">
+                    <h1 class="logo-wrap">
+                        <a href="/" class="logo"></a>
+                    </h1>
+                        <h2 class="subtitle-wrap">
+                            <p class="subtitle">기분조타~</p>
+                        </h2>
+                </div>
+                <div id="header-inner" class="nav-container">
+                    <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
+                    <div class="nav-container-inner">
+                        <ul id="main-nav">
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/">Home</a>
+                                </li>
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="//">C++</a>
+                                </li>
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="//">Python</a>
+                                </li>
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/%5Bobject%20Object%5D">Project</a>
+                                    <ul class="main-nav-list-child">
+                                        <li class="main-nav-list-item">
+                                            
+                                                <a class="main-nav-list-link" href="//">Kaggle</a>
+                                            
+                                                <a class="main-nav-list-link" href="/%20/">Dacon</a>
+                                            
+                                        </li>
+                                    </ul>
+                                </li>
+                                
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" target="_blank" rel="noopener" href="https://cho222.github.io/">About</a>
+                                </li>
+                            
+                        </ul>
+                        <nav id="sub-nav">
+                            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+
+</div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+        <div class="container">
+            <div class="main-body container-inner">
+                <div class="main-body-inner">
+                    <section id="main">
+                        <div class="main-body-header">
+    <h1 class="header">
+    
+    <a class="page-title-link" href="/categories/Python/">Python</a>
+    </h1>
+</div>
+
+                        <div class="main-body-content">
+                            <article id="post-python" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+        python 기초문법
+        </h1>
+    
+
+            </header>
+        
+        
+            <div class="article-meta">
+                
+  <div class="article-date">
+    <i class="fa fa-calendar"></i>
+    <a href="/2021/04/06/python/" class="article-date">
+       <time datetime="2021-04-06T02:47:52.000Z" itemprop="datePublished">2021-04-06</time>
+    </a>
+  </div>
+
+
+<div class="article-date">
+  <i class="fa fa-calendar-plus-o"></i>
+  <a href="/2021/04/06/python/" class="article-date">
+     <time datetime="2021-06-07T11:01:52.054Z" itemprop="dateModified">2021-06-07</time>
+  </a>
+</div>
+
+
+                
+
+                
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link-link" href="/tags/python/" rel="tag">python</a>
+    </div>
+
+                
+
+                
+
+            </div>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            
+
+            
+
+            
+
+            <h1 id="1-Hello-World-출력"><a href="#1-Hello-World-출력" class="headerlink" title="1. Hello World  출력"></a>1. Hello World  출력</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="string">&quot;Hello World&quot;</span>);</span><br></pre></td></tr></table></figure>
+<pre><code>Hello, world!
+</code></pre>
+<h1 id="2-주석처리"><a href="#2-주석처리" class="headerlink" title="2. 주석처리"></a>2. 주석처리</h1><ul>
+<li>한줄주석처리 -&gt; # </li>
+<li>여러줄 주석처리 -&gt; 동일한 따옴표(“”” or ‘’’) 3개와 3개 사이에는 어떠한내용이 들어가도 주석처리가된다.</li>
+</ul>
+<h1 id="3-사칙연산"><a href="#3-사칙연산" class="headerlink" title="3. 사칙연산"></a>3. 사칙연산</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">a = <span class="number">5</span></span><br><span class="line">b = <span class="number">7</span></span><br><span class="line">print(<span class="string">&#x27;a + b = &#x27;</span>, a+b); <span class="comment"># 더하기</span></span><br><span class="line">print(<span class="string">&#x27;a - b = &#x27;</span>, a-b); <span class="comment"># 빼기</span></span><br><span class="line">print(<span class="string">&#x27;a * b = &#x27;</span>, a*b); <span class="comment"># 곱하기</span></span><br><span class="line">print(<span class="string">&#x27;a / b = &#x27;</span>, a/b); <span class="comment"># 나누기</span></span><br><span class="line">print(<span class="string">&#x27;a // b = &#x27;</span>, a//b); <span class="comment"># 몫</span></span><br><span class="line">print(<span class="string">&#x27;a % b = &#x27;</span>, a%b); <span class="comment"># 나머지</span></span><br><span class="line">print(<span class="string">&#x27;a ** b = &#x27;</span>, a**b); <span class="comment"># 거듭제곱</span></span><br></pre></td></tr></table></figure>
+<pre><code>a + b =  12
+a - b =  -2
+a * b =  35
+a / b =  0.7142857142857143
+a // b =  0
+a % b =  5
+a ** b =  78125
+</code></pre>
+<h1 id="4-문자열"><a href="#4-문자열" class="headerlink" title="4. 문자열"></a>4. 문자열</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">str1 = <span class="string">&quot;Hello&quot;</span>;</span><br><span class="line">str2 = <span class="string">&quot;World&quot;</span>;</span><br><span class="line">print(<span class="string">&#x27;str1 + str2=&#x27;</span>, str1 + str2);</span><br><span class="line"></span><br><span class="line"><span class="built_in">str</span> = str1 + str2</span><br><span class="line">print(<span class="string">&#x27;str * 3 = &#x27;</span>, <span class="built_in">str</span> * <span class="number">3</span>);</span><br></pre></td></tr></table></figure>
+<pre><code>str1 + str2 =  Hello World 
+
+str * 3 =  Hello World Hello World Hello World 
+</code></pre>
+<h1 id="5-Indexing"><a href="#5-Indexing" class="headerlink" title="5. Indexing"></a>5. Indexing</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">str</span> = <span class="string">&quot;Hello World!&quot;</span>;</span><br><span class="line">print(<span class="built_in">str</span>[<span class="number">6</span>]);</span><br></pre></td></tr></table></figure>
+<pre><code>W
+</code></pre>
+<h1 id="4-Slicing"><a href="#4-Slicing" class="headerlink" title="4. Slicing"></a>4. Slicing</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">str</span> = <span class="string">&quot;Hello World!&quot;</span></span><br><span class="line">print(<span class="built_in">str</span>[:])  <span class="comment"># 인덱스 처음부터 끝까지</span></span><br><span class="line">print(<span class="built_in">str</span>[<span class="number">6</span>:]) <span class="comment"># 인덱스 6부터 끝까지 잘라서 출력</span></span><br><span class="line">print(<span class="built_in">str</span>[:<span class="number">6</span>]) <span class="comment"># 인덱스 0부터 5까지 잘라서 출력</span></span><br><span class="line">print(<span class="built_in">str</span>[<span class="number">2</span>:<span class="number">8</span>]) <span class="comment"># 인덱스 2부터 7까지 잘라서 출력</span></span><br><span class="line">print(<span class="built_in">str</span>[<span class="number">0</span>:<span class="number">9</span>:<span class="number">2</span>]) <span class="comment"># 인덱스를 0부터 2씩 증가시키면서 8까지 출력</span></span><br></pre></td></tr></table></figure>
+<pre><code>Hello World!
+World!
+Hello 
+llo Wo
+HloWr
+</code></pre>
+<h1 id="5-List"><a href="#5-List" class="headerlink" title="5. List"></a>5. List</h1><ul>
+<li><p>리스트</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">a = [] <span class="comment"># 빈 리스트</span></span><br><span class="line">a_list = <span class="built_in">list</span>() <span class="comment">#list()함수로도 빈 리스트를 만들 수 있다.</span></span><br><span class="line">b = [<span class="number">1</span>] <span class="comment"># 숫자도 요소가 될 수 있다.</span></span><br><span class="line">c = [<span class="string">&#x27;str&#x27;</span>] <span class="comment"># 문자열도 요소가 될 수 있다</span></span><br><span class="line">d = [<span class="number">1</span>, <span class="number">2</span>, [<span class="string">&#x27;str&#x27;</span>]] <span class="comment"># 리스트 안에 리스트를 요소로 넣을 수 있다.</span></span><br></pre></td></tr></table></figure>
+
+<pre><code>  []
+  []
+  [1]
+  [&#39;str&#39;]
+  [1, 2, [&#39;str&#39;]]
+</code></pre>
+</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">a =    [<span class="number">1</span>,    <span class="number">2</span>,   <span class="number">3</span>]</span><br><span class="line"><span class="comment"># index [[0], [1], [2]]</span></span><br><span class="line">print(a[<span class="number">0</span>]) <span class="comment"># 첫번째 요소</span></span><br><span class="line">print(a[<span class="number">1</span>]) <span class="comment"># 두번째 요소</span></span><br><span class="line">print(a[<span class="number">2</span>]) <span class="comment"># 세번째 요소</span></span><br><span class="line">print(a[-<span class="number">1</span>]) <span class="comment"># 역순</span></span><br></pre></td></tr></table></figure>
+<pre><code>1
+2
+3
+3
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">a = [[<span class="string">&#x27;str1&#x27;</span>,<span class="string">&#x27;str2&#x27;</span>,<span class="string">&#x27;str3&#x27;</span>]]</span><br><span class="line">print(a[<span class="number">0</span>]) <span class="comment"># 리스트 내의 리스트</span></span><br><span class="line">print(a[<span class="number">0</span>][<span class="number">0</span>]) <span class="comment"># 리스트 내의 리스트의 첫번째 문자열</span></span><br><span class="line">print(a[<span class="number">0</span>][<span class="number">0</span>][<span class="number">3</span>]) <span class="comment"># 리스트 내의 리스트의 첫번째 문자열 &#x27;apple&#x27; 중 첫번째 인덱스</span></span><br><span class="line">print(a[<span class="number">0</span>][<span class="number">1</span>]) <span class="comment"># 리스트 내의 리스트의 두번째 문자열</span></span><br></pre></td></tr></table></figure>
+
+<pre><code>[&#39;str1&#39;, &#39;str2&#39;, &#39;str3&#39;]
+str1  
+1
+str2
+</code></pre>
+<ul>
+<li><p>리스트 값 수정</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">a = [<span class="number">0</span>,<span class="number">1</span>,<span class="number">2</span>]</span><br><span class="line">a[<span class="number">1</span>] = <span class="string">&quot;b&quot;</span></span><br><span class="line"></span><br><span class="line">print(a)</span><br></pre></td></tr></table></figure>
+<pre><code> [0, &#39;b&#39;, 2]
+</code></pre>
+</li>
+<li><p>리스트값 추가</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">a = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br><span class="line">a.append(<span class="number">4</span>)</span><br><span class="line">print(a)</span><br><span class="line"></span><br><span class="line">a.append([<span class="number">5</span>,<span class="number">6</span>])</span><br><span class="line">print(a)</span><br></pre></td></tr></table></figure>
+<pre><code>  [1, 2, 3, 4]
+
+  [1, 2, 3, 4, [5, 6]]
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">a = [<span class="number">0</span>,<span class="number">1</span>,<span class="number">2</span>]</span><br><span class="line"></span><br><span class="line">a.insert(<span class="number">1</span>,<span class="number">7</span>)</span><br><span class="line">print(a)</span><br></pre></td></tr></table></figure>
+<pre><code>  [0, 7, 1, 2]
+</code></pre>
+</li>
+<li><p>리스트 값 삭제</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">a =[<span class="number">1</span>,<span class="number">2</span>,<span class="number">1</span>,<span class="number">2</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment">#리스트의 첫번째 1이 삭제</span></span><br><span class="line">a.remove(<span class="number">1</span>)</span><br><span class="line">print(a)</span><br></pre></td></tr></table></figure>
+<pre><code>  [2, 1, 2]
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">a = [<span class="number">0</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 1 삭제</span></span><br><span class="line"><span class="keyword">del</span> a[<span class="number">1</span>]</span><br><span class="line">print(a)</span><br><span class="line"></span><br><span class="line">b = [<span class="number">0</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>]</span><br><span class="line"><span class="comment"># 범위로 삭제</span></span><br><span class="line"><span class="keyword">del</span> b[<span class="number">1</span>:<span class="number">3</span>] <span class="comment">#list는 항상 시작하는 index부터, 종료하는 n의 n-1까지의 범위를 잡아줍니다.</span></span><br><span class="line">print(b)</span><br></pre></td></tr></table></figure>
+<pre><code>  [0, 2, 3, 4, 5]
+
+  [0, 3, 4, 5]
+</code></pre>
+</li>
+</ul>
+<h1 id="6-Tuple"><a href="#6-Tuple" class="headerlink" title="6. Tuple"></a>6. Tuple</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">a = () <span class="comment"># 비어있는 튜플생성</span></span><br><span class="line">a1 = (<span class="number">0</span>) <span class="comment"># 값이 한개인경우 끝에 콤마(,)를 붙이지 않았을 때는 튜플 자료형이 아니다.</span></span><br><span class="line">a2 = (<span class="number">0</span>,) <span class="comment"># 값이 한개인 경우 끝에 콤마(,)를 붙여줘야만 튜플형 자료형이다</span></span><br><span class="line">a3 = <span class="number">0</span>,<span class="number">1</span>,<span class="number">2</span> <span class="comment"># 여러개의 값 일경우 괄호가 없어도 튜플 자료형이다</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="7-List-와-Tuple의-차이점"><a href="#7-List-와-Tuple의-차이점" class="headerlink" title="7. List 와 Tuple의 차이점"></a>7. List 와 Tuple의 차이점</h1><ul>
+<li>공통점<ul>
+<li><ol>
+<li>list와 tuple모두 여러 데이터를 담을 수 있는 컨테이너형 변수이다.</li>
+</ol>
+</li>
+<li><ol start="2">
+<li>list와 tuple 모두 인덱스를 통해 특정 요소에 접근할 수 있다.</li>
+</ol>
+</li>
+<li><ol start="3">
+<li>list와 tuple 모두 iterable하다. 즉, for문에 넣고 돌릴 수 있다.</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>차이점<ul>
+<li><ol>
+<li>list는 mutable(가변)하지만 tuple은 immutable(불변)하다.</li>
+</ol>
+</li>
+<li><ol start="2">
+<li>따라서, list는 딕셔너리의 key값(해쉬값)으로 쓸 수 없지만, tuple은 가능하다.</li>
+</ol>
+</li>
+<li><ol start="3">
+<li>iteration을 도는 속도가 튜플이 더 빠르다.</li>
+</ol>
+</li>
+<li><ol start="4">
+<li>List는 내부의 값을 변경할수 있지만 Tuple은 내부의 값을 변경하거나 삭제를 할수없습니다.</li>
+</ol>
+</li>
+<li><ol start="5">
+<li>List생성은 대괄호[] Tuple생성은 소괄호()입니다.</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+        <footer class="article-footer">
+            
+
+
+
+    <a data-url="https://cho111.github.io/2021/04/06/python/" data-id="ckpfnuw35000ai0uaeh13f8r8" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+        </footer>
+    </div>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "author": {
+            "@type": "Person",
+            "name": "CHO"
+        },
+        "headline": "python 기초문법",
+        "image": "https://CHO111.github.io",
+        "keywords": "python",
+        "genre": "Python",
+        "datePublished": "2021-04-06",
+        "dateCreated": "2021-04-06",
+        "dateModified": "2021-06-07",
+        "url": "https://CHO111.github.io/2021/04/06/python/",
+        "description": "1. Hello World  출력1print(&quot;Hello World&quot;);
+Hello, world!
+
+2. 주석처리
+한줄주석처리 -&gt; # 
+여러줄 주석처리 -&gt; 동일한 따옴표(“”” or ‘’’) 3개와 3개 사이에는 어떠한내용이 들어가도 주석처리가된다.
+
+3. 사칙연산123456789a = 5b = 7print(&#x27;a +",
+        "wordCount": 872
+    }
+</script>
+
+</article>
+
+    <section id="comments">
+    
+        
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+
+
+    
+    </section>
+
+
+
+                        </div>
+                    </section>
+                    <aside id="sidebar">
+    <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+    <div class="sidebar-top">
+        <p>follow:</p>
+        <ul class="social-links">
+            
+                
+                <li>
+                    <a class="social-tooltip" title="twitter" href="/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-twitter"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="facebook" href="/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-facebook"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="stack-overflow" href="/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-stack-overflow"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="github" href="https://github.com/ppoffice/hexo-theme-hueman" target="_blank" rel="noopener">
+                        <i class="icon fa fa-github"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="weibo" href="/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-weibo"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="rss" href="/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-rss"></i>
+                    </a>
+                </li>
+                
+            
+        </ul>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+        <a href="/2021/04/06/numpy/" id="article-nav-newer" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">newer</strong>
+        <p class="article-nav-title">
+        
+            Numpy 정리
+        
+        </p>
+        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
+    </a>
+    
+    
+        <a href="/2021/03/29/Data-visualisation/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">older</strong>
+        <p class="article-nav-title">데이터 시각화</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
+    
+    <div class="widgets-container">
+        
+            
+                
+
+            
+                
+    <div class="widget-wrap">
+        <h3 class="widget-title">recents</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2021/06/03/Dacon_ProJect/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Project/">Project</a></p>
+                            <p class="item-title"><a href="/2021/06/03/Dacon_ProJect/" class="title">Dacon 부동산 시각화 Project</a></p>
+                            <p class="item-date"><time datetime="2021-06-02T16:04:46.000Z" itemprop="datePublished">2021-06-03</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2021/05/05/kaggle-project/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/image/kaggle/TabularPlaygroundSeriesApr2021.PNG)" alt="Tabular Playground Series - Apr 2021(kaggle 대회)" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Project/">Project</a></p>
+                            <p class="item-title"><a href="/2021/05/05/kaggle-project/" class="title">Tabular Playground Series - Apr 2021(kaggle 대회)</a></p>
+                            <p class="item-date"><time datetime="2021-05-05T11:24:20.000Z" itemprop="datePublished">2021-05-05</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2021/04/07/python_visualization/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/image/image3/output_5_0.png)" alt="파이썬 시각화 실습" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Python/">Python</a></p>
+                            <p class="item-title"><a href="/2021/04/07/python_visualization/" class="title">파이썬 시각화 실습</a></p>
+                            <p class="item-date"><time datetime="2021-04-07T02:46:18.000Z" itemprop="datePublished">2021-04-07</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2021/04/06/numpy/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Python/">Python</a></p>
+                            <p class="item-title"><a href="/2021/04/06/numpy/" class="title">Numpy 정리</a></p>
+                            <p class="item-date"><time datetime="2021-04-06T06:54:47.000Z" itemprop="datePublished">2021-04-06</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2021/04/06/python/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Python/">Python</a></p>
+                            <p class="item-title"><a href="/2021/04/06/python/" class="title">python 기초문법</a></p>
+                            <p class="item-date"><time datetime="2021-04-06T02:47:52.000Z" itemprop="datePublished">2021-04-06</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">categories</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Project/">Project</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Python/">Python</a><span class="category-list-count">3</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">archives</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/06/">June 2021</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/05/">May 2021</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/04/">April 2021</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/03/">March 2021</a><span class="archive-list-count">2</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">tags</h3>
+        <div class="widget">
+            <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Deep-learning-Project/" rel="tag">Deep learning , Project</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-learning-Project/" rel="tag">Machine learning , Project</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/R/" rel="tag">R</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python/" rel="tag">python</a><span class="tag-list-count">3</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-float">
+        <h3 class="widget-title">tag cloud</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/Deep-learning-Project/" style="font-size: 10px;">Deep learning , Project</a> <a href="/tags/Machine-learning-Project/" style="font-size: 10px;">Machine learning , Project</a> <a href="/tags/R/" style="font-size: 15px;">R</a> <a href="/tags/python/" style="font-size: 20px;">python</a>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">links</h3>
+        <div class="widget">
+            <ul>
+                
+                    <li>
+                        <a target="_blank" rel="noopener" href="http://hexo.io">Hexo</a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+
+            
+        
+    </div>
+</aside>
+
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+    <div class="container">
+        <div class="container-inner">
+            <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
+            <div class="credit">
+                <h1 class="logo-wrap">
+                    <a href="/" class="logo"></a>
+                </h1>
+                <p>&copy; 2021 CHO</p>
+                
+                <p>Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>. Theme by <a href="https://github.com/ppoffice" target="_blank">PPOffice</a></p>
+                
+            </div>
+            <div class="footer-plugins">
+              
+    
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+    </div>
+    
+    
+    <script>
+    var disqus_shortname = 'hexo-theme-hueman';
+    
+    
+    var disqus_url = 'https://cho111.github.io/2021/04/06/python/';
+    
+    (function() {
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+
+
+
+
+
+    
+        
+<script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-share.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-video.min.js"></script>
+
+    
+    
+        
+<script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+
+    
+    
+
+    
+    
+    
+
+
+
+<!-- Custom Scripts -->
+
+<script src="/js/main.js"></script>
+
+
+</body>
+</html>
