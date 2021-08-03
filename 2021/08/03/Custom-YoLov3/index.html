@@ -6,26 +6,24 @@
     
 
     
-    <title>C++ Qt | OWL Sound</title>
+    <title>Custom YoLov3 | OWL Sound</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-    <meta name="keywords" content="C++, Qt" />
+    <meta name="keywords" content="Python, YOLO, PyQt5" />
     
-    <meta name="description" content="C++ Qt로 간단한 GUI만들기 사진과 같은 GUI를 구현 해보자!.  프로젝트명은 QtWidgetsApplication1 로 생성하였다. UI 구성 h.파일코드123456789101112131415161718#pragma once#include &lt;QtWidgets&#x2F;QDialog&gt;#include &quot;ui_QtWidgetsApplicati">
+    <meta name="description" content="콘테스트 개요1. 설명  qt로 틀을만들고 그안에 opencv로 기능을 구현하고 yolo를 custom하여 학습시킨 모델을 가지고 도로위의 사람을 검출하는 프로그램  2. 도전목표  custom yolo를 활용해 원하는학습을 시키고 학습을시킨 객체를 검출해보자  3. 기여  custom yolo 모델 만들기, 이미지 라벨링, opencv코드 구현  4. 결">
 <meta property="og:type" content="article">
-<meta property="og:title" content="C++ Qt">
-<meta property="og:url" content="https://cho111.github.io/2021/06/18/C++_Qt/index.html">
+<meta property="og:title" content="Custom YoLov3">
+<meta property="og:url" content="https://cho111.github.io/2021/08/03/Custom-YoLov3/index.html">
 <meta property="og:site_name" content="OWL Sound">
-<meta property="og:description" content="C++ Qt로 간단한 GUI만들기 사진과 같은 GUI를 구현 해보자!.  프로젝트명은 QtWidgetsApplication1 로 생성하였다. UI 구성 h.파일코드123456789101112131415161718#pragma once#include &lt;QtWidgets&#x2F;QDialog&gt;#include &quot;ui_QtWidgetsApplicati">
+<meta property="og:description" content="콘테스트 개요1. 설명  qt로 틀을만들고 그안에 opencv로 기능을 구현하고 yolo를 custom하여 학습시킨 모델을 가지고 도로위의 사람을 검출하는 프로그램  2. 도전목표  custom yolo를 활용해 원하는학습을 시키고 학습을시킨 객체를 검출해보자  3. 기여  custom yolo 모델 만들기, 이미지 라벨링, opencv코드 구현  4. 결">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://user-images.githubusercontent.com/54093963/122520501-a178b100-d04e-11eb-9900-16dfb2c721c1.png">
-<meta property="article:published_time" content="2021-06-18T06:55:34.000Z">
-<meta property="article:modified_time" content="2021-06-25T12:15:59.313Z">
+<meta property="article:published_time" content="2021-08-03T14:09:07.000Z">
+<meta property="article:modified_time" content="2021-08-03T14:15:50.492Z">
 <meta property="article:author" content="CHO">
-<meta property="article:tag" content="C++, Qt">
+<meta property="article:tag" content="Python, YOLO, PyQt5">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://user-images.githubusercontent.com/54093963/122520501-a178b100-d04e-11eb-9900-16dfb2c721c1.png">
     
 
     
@@ -156,19 +154,19 @@
                         <div class="main-body-header">
     <h1 class="header">
     
-    <a class="page-title-link" href="/categories/C/">C++</a>
+    <a class="page-title-link" href="/categories/Project/">Project</a><i class="icon fa fa-angle-right"></i><a class="page-title-link" href="/categories/Project/Study/">Study</a>
     </h1>
 </div>
 
                         <div class="main-body-content">
-                            <article id="post-C++_Qt" class="article article-single article-type-post" itemscope itemprop="blogPost">
+                            <article id="post-Custom-YoLov3" class="article article-single article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
             <header class="article-header">
                 
     
         <h1 class="article-title" itemprop="name">
-        C++ Qt
+        Custom YoLov3
         </h1>
     
 
@@ -179,16 +177,16 @@
                 
   <div class="article-date">
     <i class="fa fa-calendar"></i>
-    <a href="/2021/06/18/C++_Qt/" class="article-date">
-       <time datetime="2021-06-18T06:55:34.000Z" itemprop="datePublished">2021-06-18</time>
+    <a href="/2021/08/03/Custom-YoLov3/" class="article-date">
+       <time datetime="2021-08-03T14:09:07.000Z" itemprop="datePublished">2021-08-03</time>
     </a>
   </div>
 
 
 <div class="article-date">
   <i class="fa fa-calendar-plus-o"></i>
-  <a href="/2021/06/18/C++_Qt/" class="article-date">
-     <time datetime="2021-06-25T12:15:59.313Z" itemprop="dateModified">2021-06-25</time>
+  <a href="/2021/08/03/Custom-YoLov3/" class="article-date">
+     <time datetime="2021-08-03T14:15:50.492Z" itemprop="dateModified">2021-08-03</time>
   </a>
 </div>
 
@@ -198,7 +196,7 @@
                 
     <div class="article-tag">
         <i class="fa fa-tag"></i>
-        <a class="tag-link-link" href="/tags/C-Qt/" rel="tag">C++, Qt</a>
+        <a class="tag-link-link" href="/tags/Python-YOLO-PyQt5/" rel="tag">Python, YOLO, PyQt5</a>
     </div>
 
                 
@@ -215,15 +213,23 @@
 
             
 
-            <h1 id="C-Qt로-간단한-GUI만들기"><a href="#C-Qt로-간단한-GUI만들기" class="headerlink" title="C++ Qt로 간단한 GUI만들기"></a>C++ Qt로 간단한 GUI만들기</h1><p><img src="https://user-images.githubusercontent.com/54093963/122520501-a178b100-d04e-11eb-9900-16dfb2c721c1.png"></p>
-<p>사진과 같은 GUI를 구현 해보자!. </p>
-<p>프로젝트명은 QtWidgetsApplication1 로 생성하였다.</p>
-<h2 id="UI-구성"><a href="#UI-구성" class="headerlink" title="UI 구성"></a>UI 구성</h2><p><img src="https://user-images.githubusercontent.com/54093963/122521545-e8b37180-d04f-11eb-9a3b-d92118f2d89e.PNG"><br><img src="https://user-images.githubusercontent.com/54093963/122521552-ec46f880-d04f-11eb-88c7-2d538d7baf62.PNG"></p>
-<h2 id="h-파일코드"><a href="#h-파일코드" class="headerlink" title="h.파일코드"></a>h.파일코드</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> once</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;QtWidgets/QDialog&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&quot;ui_QtWidgetsApplication1.h&quot;</span></span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">QtWidgetsApplication1</span> :</span> <span class="keyword">public</span> QDialog</span><br><span class="line">&#123;</span><br><span class="line">    Q_OBJECT</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    QtWidgetsApplication1(QWidget *parent = Q_NULLPTR);</span><br><span class="line"></span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">    Ui::QtWidgetsApplication1Class ui;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> slots:</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">btn_run_clicked</span><span class="params">()</span></span>;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<h2 id="cpp-파일코드"><a href="#cpp-파일코드" class="headerlink" title="cpp.파일코드"></a>cpp.파일코드</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&quot;QtWidgetsApplication1.h&quot;</span></span></span><br><span class="line"></span><br><span class="line">QtWidgetsApplication1::QtWidgetsApplication1(QWidget *parent)</span><br><span class="line">    : QDialog(parent)</span><br><span class="line">&#123;</span><br><span class="line">    ui.setupUi(<span class="keyword">this</span>);</span><br><span class="line">    connect(ui.btn_run, SIGNAL(clicked()), <span class="keyword">this</span>, SLOT(btn_run_clicked()));</span><br><span class="line">    connect(ui.checkBox_1, SIGNAL(clicked()), <span class="keyword">this</span>, SLOT(checkBox1_clicked()));</span><br><span class="line">    connect(ui.checkBox_2, SIGNAL(clicked()), <span class="keyword">this</span>, SLOT(checkBox2_clicked()));</span><br><span class="line">    connect(ui.checkBox_3, SIGNAL(clicked()), <span class="keyword">this</span>, SLOT(checkBox3_clicked()));</span><br><span class="line">    connect(ui.checkBox_4, SIGNAL(clicked()), <span class="keyword">this</span>, SLOT(checkBox3_clicked()));</span><br><span class="line"></span><br><span class="line">    ui.comboBox-&gt;addItem(<span class="string">&quot;Male&quot;</span>);</span><br><span class="line">    ui.comboBox-&gt;addItem(<span class="string">&quot;FeMale&quot;</span>);</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">QtWidgetsApplication1::btn_run_clicked</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    ui.label_6-&gt;setText(<span class="string">&quot;Age:&quot;</span> + ui.spinBox-&gt;cleanText());</span><br><span class="line"></span><br><span class="line">    ui.label_5-&gt;setText(<span class="string">&quot;Gender:&quot;</span> + ui.comboBox-&gt;currentText());</span><br><span class="line">    </span><br><span class="line">    QString chk1 = <span class="string">&quot;&quot;</span>, chk2 = <span class="string">&quot;&quot;</span>, chk3 = <span class="string">&quot;&quot;</span>, chk4=<span class="string">&quot;&quot;</span>;</span><br><span class="line">    <span class="keyword">if</span> (ui.checkBox_1-&gt;isChecked())</span><br><span class="line">        chk1 = <span class="string">&quot;Hobby :Watching Movie&quot;</span>;</span><br><span class="line">    <span class="keyword">if</span> (ui.checkBox_2-&gt;isChecked())</span><br><span class="line">        chk2 = <span class="string">&quot;Hobby :Sports&quot;</span>;</span><br><span class="line">    <span class="keyword">if</span> (ui.checkBox_3-&gt;isChecked())</span><br><span class="line">        chk3 = <span class="string">&quot;Hobby :Drawing&quot;</span>;</span><br><span class="line">    <span class="keyword">if</span> (ui.checkBox_4-&gt;isChecked())</span><br><span class="line">        chk3 = <span class="string">&quot;Hobby :Pet&quot;</span>;</span><br><span class="line">    ui.label_4-&gt;setText(QString(<span class="string">&quot;\n%1 \n%2 \n%3 \n%4&quot;</span>).arg(chk1, chk2, chk3, chk4));</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<h2 id="실행결과"><a href="#실행결과" class="headerlink" title="실행결과"></a>실행결과</h2><p><img src="https://user-images.githubusercontent.com/54093963/122522076-8444e200-d050-11eb-8139-7c611f88cbb3.PNG"></p>
+            <h2 id="콘테스트-개요"><a href="#콘테스트-개요" class="headerlink" title="콘테스트 개요"></a>콘테스트 개요</h2><p><strong>1. 설명</strong></p>
+<ul>
+<li>qt로 틀을만들고 그안에 opencv로 기능을 구현하고 yolo를 custom하여 학습시킨 모델을 가지고 도로위의 사람을 검출하는 프로그램</li>
+</ul>
+<p><strong>2. 도전목표</strong></p>
+<ul>
+<li>custom yolo를 활용해 원하는학습을 시키고 학습을시킨 객체를 검출해보자</li>
+</ul>
+<p><strong>3. 기여</strong></p>
+<ul>
+<li>custom yolo 모델 만들기, 이미지 라벨링, opencv코드 구현</li>
+</ul>
+<p><strong>4. 결과</strong> </p>
+<ul>
+<li>어설프지만 작동은 잘된다.</li>
+</ul>
+<h2 id="발표자료-링크"><a href="#발표자료-링크" class="headerlink" title="발표자료 링크"></a>발표자료 링크</h2><p><a href="">Git Hub</a></p>
 
         </div>
         <footer class="article-footer">
@@ -231,7 +237,7 @@
 
 
 
-    <a data-url="https://cho111.github.io/2021/06/18/C++_Qt/" data-id="ckqdqsh9h0000akuaebru7v36" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="https://cho111.github.io/2021/08/03/Custom-YoLov3/" data-id="ckrw59jjn0000kouafrsia4oc" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -301,20 +307,28 @@
             "@type": "Person",
             "name": "CHO"
         },
-        "headline": "C++ Qt",
-        "image": "https://CHO111.github.iohttps://user-images.githubusercontent.com/54093963/122520501-a178b100-d04e-11eb-9900-16dfb2c721c1.png",
-        "keywords": "C++, Qt",
-        "genre": "C++",
-        "datePublished": "2021-06-18",
-        "dateCreated": "2021-06-18",
-        "dateModified": "2021-06-25",
-        "url": "https://CHO111.github.io/2021/06/18/C++_Qt/",
-        "description": "C++ Qt로 간단한 GUI만들기
-사진과 같은 GUI를 구현 해보자!. 
-프로젝트명은 QtWidgetsApplication1 로 생성하였다.
-UI 구성
-h.파일코드123456789101112131415161718#pragma once#include &lt;QtWidgets/QDialog&gt;#include &quot;ui_QtWidgetsApplicati",
-        "wordCount": 392
+        "headline": "Custom YoLov3",
+        "image": "https://CHO111.github.io",
+        "keywords": "Python, YOLO, PyQt5",
+        "genre": "Project Study",
+        "datePublished": "2021-08-03",
+        "dateCreated": "2021-08-03",
+        "dateModified": "2021-08-03",
+        "url": "https://CHO111.github.io/2021/08/03/Custom-YoLov3/",
+        "description": "콘테스트 개요1. 설명
+
+qt로 틀을만들고 그안에 opencv로 기능을 구현하고 yolo를 custom하여 학습시킨 모델을 가지고 도로위의 사람을 검출하는 프로그램
+
+2. 도전목표
+
+custom yolo를 활용해 원하는학습을 시키고 학습을시킨 객체를 검출해보자
+
+3. 기여
+
+custom yolo 모델 만들기, 이미지 라벨링, opencv코드 구현
+
+4. 결",
+        "wordCount": 50
     }
 </script>
 
@@ -397,20 +411,10 @@ h.파일코드123456789101112131415161718#pragma once#include &lt;QtWidgets/QDia
         
 <nav id="article-nav">
     
-        <a href="/2021/06/26/C-study/" id="article-nav-newer" class="article-nav-link-wrap">
-        <strong class="article-nav-caption">newer</strong>
-        <p class="article-nav-title">
-        
-            C++_공부
-        
-        </p>
-        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
-    </a>
     
-    
-        <a href="/2021/06/16/Dacon-card/" id="article-nav-older" class="article-nav-link-wrap">
+        <a href="/2021/06/27/postYOLOv4-review/" id="article-nav-older" class="article-nav-link-wrap">
         <strong class="article-nav-caption">older</strong>
-        <p class="article-nav-title">Dacon-card</p>
+        <p class="article-nav-title">YOLOv4 논문 리뷰</p>
         <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
         </a>
     
@@ -627,7 +631,7 @@ h.파일코드123456789101112131415161718#pragma once#include &lt;QtWidgets/QDia
     var disqus_shortname = 'hexo-theme-hueman';
     
     
-    var disqus_url = 'https://cho111.github.io/2021/06/18/C++_Qt/';
+    var disqus_url = 'https://cho111.github.io/2021/08/03/Custom-YoLov3/';
     
     (function() {
     var dsq = document.createElement('script');
